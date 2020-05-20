@@ -31,7 +31,7 @@ gem 'nokogiri'
 gem 'net-dns'           # dns_cache_snoop
 gem 'dnsruby'           # dns_zone_transfer
 gem 'em-resolv-replace' # dns_brute_sub
-gem 'whois'             # dns_zone_transfer, whois
+gem 'whois'             , '>= 3.6.3' # dns_zone_transfer, whois
 gem 'googleajax'        # search_google
 gem 'geoip'             # geolocate_host
 gem 'shodan'            # search_shodan
