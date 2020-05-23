@@ -3,7 +3,7 @@ source 'https://rubygems.org'
 gem 'sinatra' # API
 gem 'sinatra-contrib'
 
-gem 'puma' # Application Server
+gem 'puma' , '>= 3.12.6' # Application Server
 gem 'sidekiq' # Background Tasks
 gem 'foreman' # Process management
 gem 'redis' # Redis access
