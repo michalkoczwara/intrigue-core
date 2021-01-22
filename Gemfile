@@ -40,7 +40,7 @@ gem 'screencap', :git => 'https://github.com/intrigueio/screencap.git'
 gem 'twitter'           # twitter_account_following, etc
 gem 'arachnid', :git => 'https://github.com/intrigueio/arachnid.git' #:path => "/Users/jcran/work/intrigue/projects/arachnid"
 gem 'yomu'              # web spider
-gem 'gmail'        # email_bounceback
+gem 'gmail'        , '>= 0.6.0' # email_bounceback
 #gem 'rex'              # metasploit rex library
 
 # CLI
