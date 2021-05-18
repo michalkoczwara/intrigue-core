@@ -25,7 +25,7 @@ gem 'pry' # Debugging
 gem 'intrigue', :path => './util/intrigue-gem'        # Client for calling the API
 
 # Client::Search::*Scraper
-gem 'nokogiri'
+gem 'nokogiri', '>= 1.11.4'
 
 # Tasks
 gem 'net-dns'           # dns_cache_snoop
@@ -35,7 +35,7 @@ gem 'whois'             # dns_zone_transfer, whois
 gem 'googleajax'        # search_google
 gem 'geoip'             # geolocate_host
 gem 'shodan'            # search_shodan
-gem 'ruby-nmap'         # nmap_scan
+gem 'ruby-nmap'         , '>= 0.8.0' # nmap_scan
 gem 'screencap', :git => 'https://github.com/intrigueio/screencap.git'
 gem 'twitter'           # twitter_account_following, etc
 gem 'arachnid', :git => 'https://github.com/intrigueio/arachnid.git' #:path => "/Users/jcran/work/intrigue/projects/arachnid"
