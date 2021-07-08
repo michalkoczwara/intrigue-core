@@ -9,11 +9,11 @@ gem 'foreman' # Process management
 gem 'redis' # Redis access
 gem 'eventmachine'
 
-gem 'data_mapper'
-gem 'dm-pg-types'
-gem 'dm-postgres-adapter'
-gem 'dm-sqlite-adapter'
-gem 'dm-noisy-failures'
+gem 'data_mapper', '>= 1.2.0'
+gem 'dm-pg-types', '>= 0.8.2'
+gem 'dm-postgres-adapter', '>= 1.2.0'
+gem 'dm-sqlite-adapter', '>= 1.2.0'
+gem 'dm-noisy-failures', '>= 0.2.3'
 
 gem 'iconv' # Encoding
 gem 'rest-client' # Web hooks
@@ -37,7 +37,7 @@ gem 'geoip'             # geolocate_host
 gem 'shodan'            # search_shodan
 gem 'ruby-nmap'         # nmap_scan
 gem 'screencap', :git => 'https://github.com/intrigueio/screencap.git'
-gem 'twitter'           # twitter_account_following, etc
+gem 'twitter'           , '>= 5.15.0' # twitter_account_following, etc
 gem 'arachnid', :git => 'https://github.com/intrigueio/arachnid.git' #:path => "/Users/jcran/work/intrigue/projects/arachnid"
 gem 'yomu'              # web spider
 gem 'gmail'        # email_bounceback
