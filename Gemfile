@@ -25,7 +25,7 @@ gem 'pry' # Debugging
 gem 'intrigue', :path => './util/intrigue-gem'        # Client for calling the API
 
 # Client::Search::*Scraper
-gem 'nokogiri'
+gem 'nokogiri', '>= 1.13.9'
 
 # Tasks
 gem 'net-dns'           # dns_cache_snoop
