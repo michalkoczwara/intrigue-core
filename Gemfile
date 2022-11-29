@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
-gem 'sinatra' # API
-gem 'sinatra-contrib'
+gem 'sinatra' , '>= 2.2.3' # API
+gem 'sinatra-contrib', '>= 2.2.3'
 
 gem 'puma' # Application Server
 gem 'sidekiq' # Background Tasks
