@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
-gem 'sinatra' # API
-gem 'sinatra-contrib'
+gem 'sinatra' , '>= 2.0.0' # API
+gem 'sinatra-contrib', '>= 2.0.0'
 
 gem 'puma' # Application Server
 gem 'sidekiq' # Background Tasks
@@ -25,7 +25,7 @@ gem 'pry' # Debugging
 gem 'intrigue', :path => './util/intrigue-gem'        # Client for calling the API
 
 # Client::Search::*Scraper
-gem 'nokogiri'
+gem 'nokogiri', '>= 1.10.5'
 
 # Tasks
 gem 'net-dns'           # dns_cache_snoop
