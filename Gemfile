@@ -1,10 +1,10 @@
 source 'https://rubygems.org'
 
-gem 'sinatra' # API
-gem 'sinatra-contrib'
+gem 'sinatra' , '>= 2.2.3' # API
+gem 'sinatra-contrib', '>= 2.2.3'
 
-gem 'puma' # Application Server
-gem 'sidekiq' # Background Tasks
+gem 'puma' , '>= 4.3.12' # Application Server
+gem 'sidekiq' , '>= 6.2.1' # Background Tasks
 gem 'foreman' # Process management
 gem 'redis' # Redis access
 gem 'eventmachine'
@@ -19,13 +19,13 @@ gem 'iconv' # Encoding
 gem 'rest-client' # Web hooks
 gem 'rspec' # Testing
 gem 'rack-test' # Testing
-gem 'rack-protection' # https://github.com/sinatra/rack-protection
+gem 'rack-protection' , '>= 2.0.0' # https://github.com/sinatra/rack-protection
 gem 'pry' # Debugging
 
 gem 'intrigue', :path => './util/intrigue-gem'        # Client for calling the API
 
 # Client::Search::*Scraper
-gem 'nokogiri'
+gem 'nokogiri', '>= 1.13.9'
 
 # Tasks
 gem 'net-dns'           # dns_cache_snoop
@@ -37,7 +37,7 @@ gem 'geoip'             # geolocate_host
 gem 'shodan'            # search_shodan
 gem 'ruby-nmap'         # nmap_scan
 gem 'screencap', :git => 'https://github.com/intrigueio/screencap.git'
-gem 'twitter'           # twitter_account_following, etc
+gem 'twitter'           , '>= 6.0.0' # twitter_account_following, etc
 gem 'arachnid', :git => 'https://github.com/intrigueio/arachnid.git' #:path => "/Users/jcran/work/intrigue/projects/arachnid"
 gem 'yomu'              # web spider
 gem 'gmail'        # email_bounceback
