@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
-gem 'sinatra' # API
-gem 'sinatra-contrib'
+gem 'sinatra' , '>= 2.0.0' # API
+gem 'sinatra-contrib', '>= 2.0.0'
 
 gem 'puma' # Application Server
 gem 'sidekiq' # Background Tasks
@@ -18,14 +18,14 @@ gem 'dm-noisy-failures'
 gem 'iconv' # Encoding
 gem 'rest-client' # Web hooks
 gem 'rspec' # Testing
-gem 'rack-test' # Testing
-gem 'rack-protection' # https://github.com/sinatra/rack-protection
+gem 'rack-test' , '>= 0.7.0' # Testing
+gem 'rack-protection' , '>= 1.5.4' # https://github.com/sinatra/rack-protection
 gem 'pry' # Debugging
 
 gem 'intrigue', :path => './util/intrigue-gem'        # Client for calling the API
 
 # Client::Search::*Scraper
-gem 'nokogiri'
+gem 'nokogiri', '>= 1.15.6'
 
 # Tasks
 gem 'net-dns'           # dns_cache_snoop
@@ -35,7 +35,7 @@ gem 'whois'             # dns_zone_transfer, whois
 gem 'googleajax'        # search_google
 gem 'geoip'             # geolocate_host
 gem 'shodan'            # search_shodan
-gem 'ruby-nmap'         # nmap_scan
+gem 'ruby-nmap'         , '>= 0.9.0' # nmap_scan
 gem 'screencap', :git => 'https://github.com/intrigueio/screencap.git'
 gem 'twitter'           # twitter_account_following, etc
 gem 'arachnid', :git => 'https://github.com/intrigueio/arachnid.git' #:path => "/Users/jcran/work/intrigue/projects/arachnid"
