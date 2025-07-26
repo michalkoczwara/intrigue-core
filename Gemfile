@@ -5,7 +5,7 @@ gem 'sinatra-contrib'
 
 gem 'puma' # Application Server
 gem 'sidekiq' # Background Tasks
-gem 'foreman' # Process management
+gem 'foreman' , '>= 0.86.0' # Process management
 gem 'redis' # Redis access
 gem 'eventmachine'
 
@@ -25,7 +25,7 @@ gem 'pry' # Debugging
 gem 'intrigue', :path => './util/intrigue-gem'        # Client for calling the API
 
 # Client::Search::*Scraper
-gem 'nokogiri'
+gem 'nokogiri', '>= 1.18.9'
 
 # Tasks
 gem 'net-dns'           # dns_cache_snoop
@@ -35,7 +35,7 @@ gem 'whois'             # dns_zone_transfer, whois
 gem 'googleajax'        # search_google
 gem 'geoip'             # geolocate_host
 gem 'shodan'            # search_shodan
-gem 'ruby-nmap'         # nmap_scan
+gem 'ruby-nmap'         , '>= 0.9.0' # nmap_scan
 gem 'screencap', :git => 'https://github.com/intrigueio/screencap.git'
 gem 'twitter'           # twitter_account_following, etc
 gem 'arachnid', :git => 'https://github.com/intrigueio/arachnid.git' #:path => "/Users/jcran/work/intrigue/projects/arachnid"
@@ -44,7 +44,7 @@ gem 'gmail'        # email_bounceback
 #gem 'rex'              # metasploit rex library
 
 # CLI
-gem 'thor'
+gem 'thor', '>= 1.4.0'
 
 # Handlers
 gem 'couchrest'
