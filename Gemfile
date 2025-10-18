@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
-gem 'sinatra' # API
-gem 'sinatra-contrib'
+gem 'sinatra' , '>= 4.2.0' # API
+gem 'sinatra-contrib', '>= 4.2.0'
 
 gem 'puma' # Application Server
 gem 'sidekiq' # Background Tasks
@@ -18,8 +18,8 @@ gem 'dm-noisy-failures'
 gem 'iconv' # Encoding
 gem 'rest-client' # Web hooks
 gem 'rspec' # Testing
-gem 'rack-test' # Testing
-gem 'rack-protection' # https://github.com/sinatra/rack-protection
+gem 'rack-test' , '>= 0.7.0' # Testing
+gem 'rack-protection' , '>= 1.5.4' # https://github.com/sinatra/rack-protection
 gem 'pry' # Debugging
 
 gem 'intrigue', :path => './util/intrigue-gem'        # Client for calling the API
